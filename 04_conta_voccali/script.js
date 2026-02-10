@@ -2,7 +2,17 @@
 const word = 'javascript';
 
 // Dichiara la funzione qui.
-function vowelsCounter(word1) {
+ function vowelsCounter(word1) { // function invocation
+    let vowels = 0;
+    for (let i = 0; i < word1.length; i++) {
+    if (word1[i] === 'a' || word1[i] === 'e' || word1[i] === 'i' || word1[i] === 'o' || word1[i] === 'u') {
+     vowels += 1
+    }
+}
+    return vowels;
+} 
+
+const vowelsCounter = word1 => { // arrow function
     let vowels = 0;
     for (let i = 0; i < word1.length; i++) {
     if (word1[i] === 'a' || word1[i] === 'e' || word1[i] === 'i' || word1[i] === 'o' || word1[i] === 'u') {
